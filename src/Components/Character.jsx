@@ -1,7 +1,7 @@
 const Character = ({
   character,
   updateCharacter,
-  clickable,image,name,status,type,gender,origin,species
+  clickable
 }) => {
   const handleCharacter = ()=>{
     updateCharacter(character);
@@ -19,21 +19,21 @@ const Character = ({
           style={!clickable ? { width: "50rem" } : { width: "25rem" }}
           onClick={clickable ? handleCharacter : noEffect}
         >
-          <img src={image} alt="character picture" />
+          <img src={character.image} alt="character picture" />
           <div>
-            <h3>{name}</h3>
+            <h3>{character.name}</h3>
             <p>
-              {status}-{species}
+              {character.status}-{character.species}
             </p>
             {!clickable ? (
               <p>
-                {type}-{gender}
+                {character.type}-{character.gender}
               </p>
             ) : (
               ""
             )}
 
-            <p>Origin: {origin}</p>
+            <p>Origin: {character.origin.name}</p>
           </div>
         </div>
       </div>

@@ -44,13 +44,7 @@ function App() {
           character={currentCharacter}
           clickable={false}
           updateCharacter={updateCharacter}
-          image={currentCharacter.image}
-          name={currentCharacter.name}
-          status={currentCharacter.status}
-          gender={currentCharacter.gender}
-          type={currentCharacter.type}
-          species={currentCharacter.species}
-          origin={currentCharacter.origin.name}
+          
         />
       ) : (
         ""
@@ -64,13 +58,7 @@ function App() {
               character={character}
               clickable={true}
               updateCharacter={updateCharacter}
-              image={character.image}
-              name={character.name}
-              status={character.status}
-              gender={character.gender}
-              type={character.type}
-              species={character.species}
-              origin={character.origin.name}
+             
             />
           ))
         ) : (
