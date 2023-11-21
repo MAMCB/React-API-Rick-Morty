@@ -57,6 +57,10 @@ background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7), re
 background-blend-mode: multiply;
 
 }
+
+.character:hover{
+  cursor: pointer;
+}
 .character>*{
   margin:0 2rem;
 }
